@@ -67,6 +67,9 @@ export default {
             type: 'success',
             message: res.message
             })
+            //跳转课程分类列表
+            //路由跳转
+            this.$router.push({path:'/subject/list'})
         },
         //上传失败
         //res接收接口返回数据
