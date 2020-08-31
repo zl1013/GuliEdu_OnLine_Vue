@@ -76,7 +76,7 @@ export const constantRoutes = [
     redirect: '/teacher/list',
     alwaysShow: true,
     name: '讲师管理',
-    meta: { title: '讲师管理', icon: 'zip' },
+    meta: { title: '讲师管理', icon: 'example' },
     children: [
       {
         path: 'list',
@@ -96,6 +96,28 @@ export const constantRoutes = [
         name: 'EduTeacherEdit',
         meta: { title: '编辑讲师' },
         hidden:true
+      }
+    ]
+  },
+  {
+    path: '/subject',
+    component: Layout,
+    redirect: '/subject/list',
+    alwaysShow: true,
+    name: '课程分类管理',
+    meta: { title: '课程分类管理', icon: 'example' },
+    children: [
+      {
+        path: 'list',
+        component: () => import('@/views/edu/subject/list.vue'),
+        name: '课程分类列表',
+        meta: { title: '课程分类列表' }
+      },
+      {
+        path: 'add',
+        component: () => import('@/views/edu/subject/add.vue'),
+        name: '添加课程分类',
+        meta: { title: '添加课程分类' }
       }
     ]
   },
