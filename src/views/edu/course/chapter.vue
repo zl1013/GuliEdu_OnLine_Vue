@@ -107,8 +107,9 @@ export default {
       saveBtnDisabled: false, // 保存按钮是否禁用
       saveVideoBtnDisabled:false,
       chapterVideoList:[],
-      courseId:'1192252213659774977',//课程id
+      courseId:'',//课程id
       chapter:{
+        courseId:'',
         id:'',
         title:'',
         sort:'0'
@@ -237,6 +238,7 @@ export default {
       //弹框
       this.dialogChapterFormVisible = true
       //表单数据清空
+      this.chapter.id = ''
       this.chapter.title = ''
       this.chapter.sort = '0'
     },
@@ -322,10 +324,9 @@ export default {
         })
       },
     saveOrUpdate(){
-      // this.chapter.courseId = this.courseId
+      this.chapter.courseId = this.courseId
       if(!this.chapter.id){
         this.addChapter()
-        
       }else{
         this.updateChapter()
       }

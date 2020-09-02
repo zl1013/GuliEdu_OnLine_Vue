@@ -61,7 +61,7 @@ export default {
         message: res.message
         });
       })
-      // this.$router.push({ path: '/edu/course/list'})
+      this.$router.push({ path: '/course/list'})
     }
   }
 }
