@@ -52,7 +52,6 @@ export default {
       this.$router.push({ path: '/course/chapter/' + this.courseId })
     },
     publish() {
-      alert(this.courseId)
       course.publish(this.courseId)
       .then(res => {
         //提示

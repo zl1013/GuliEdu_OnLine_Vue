@@ -92,7 +92,7 @@ export default {
         return{
             tableData:null,  //查询之后接口返回集合
             page:1, //当前页
-            limit:3,   //每页记录数
+            limit:10,   //每页记录数
             total:0, //总记录数
             teacherQuery:{} //条件封装对象
         }

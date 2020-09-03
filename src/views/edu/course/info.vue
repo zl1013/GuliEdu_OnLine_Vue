@@ -125,14 +125,13 @@ export default {
             teacherId: '',
             lessonNum: 0,
             description: '',
-            cover: 'https://guliedu--online.oss-cn-beijing.aliyuncs.com/cover/cover.jpg',
+            cover: 'https://langju-online.oss-cn-beijing.aliyuncs.com/cover/cover.jpg',
             price: 0
         },
       //初始化讲师数据
       this.getTeacherList()
         //初始化一级分类数据
         this.getSubjectList()
-    
     }      
   },
   methods: {

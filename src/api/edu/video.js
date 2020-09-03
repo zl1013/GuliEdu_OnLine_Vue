@@ -25,11 +25,18 @@ export default {
           })
     },
     //根据小节id删除小节
-    deleteVideo(videoId){
+    deleteVideoByid(videoId){
         return request({
             url: `/eduservice/video/deleteVideo/${videoId}`, 
             method: 'delete',
           })
+    },
+    //根据id删除视频
+    deleteVideo(videoSourceId){
+      return request({
+        url: `/eduvod/video/deleteVideo/${videoSourceId}`, 
+        method: 'delete',
+      })
     }
 }
 

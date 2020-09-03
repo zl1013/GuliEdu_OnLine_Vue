@@ -71,7 +71,7 @@ export default {
                 level: 1,
                 career: '',
                 intro: '',
-                avatar: "https://guliedu--online.oss-cn-beijing.aliyuncs.com/favicon.png"
+                avatar: "https://langju-online.oss-cn-beijing.aliyuncs.com/avatar/favicon.png"
             },
             //上传弹框组件是否显示
             imagecropperShow:false,
