@@ -71,6 +71,27 @@ export const constantRoutes = [
     hidden: true
   },
   {
+    path: '/statistics',
+    component: Layout,
+    redirect: '/statistics/list',
+    name: '统计分析',
+    meta: { title: '统计分析', icon: 'example' },
+    children: [
+      {
+        path: 'create',
+        component: () => import('@/views/edu/statistics/create.vue'),
+        name: '生成数据',
+        meta: { title: '生成数据' }
+      },
+      {
+        path: 'show',
+        component: () => import('@/views/edu/statistics/show.vue'),
+        name: '图表展示',
+        meta: { title: '图表展示' }
+      }
+    ]
+  },
+  {
     path: '/teacher',
     component: Layout,
     redirect: '/teacher/list',
